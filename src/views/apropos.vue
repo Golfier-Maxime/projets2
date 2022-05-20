@@ -12,11 +12,9 @@
       </p>
       <h3 class="mb-2 font-medium text-2xl text-center ml-6 mr-6 font-prompt">Rencontrez les créateurs d’Axolott</h3>
       <div>
-        <h3 class="mb-2 font-medium text-2xl text-center  font-prompt">Maxime GOLFIER</h3>
+        <h3 class=" mb-2 font-medium text-2xl text-center  font-prompt">Maxime GOLFIER</h3>
         <div>  
-          <div class="mb-3 text-center text-3xl text-white">
-            <h2 class="font-prompt">Pseudo</h2>
-          </div>
+          
           <div class="flex justify-center">
             <div class="cercle_bleu">
               <img src="public/axolott/axo_main.svg" alt="axolotl de base" class="img_axo" />
@@ -31,8 +29,8 @@
 </template>
 <style>
 .cercle_bleu {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 100%;
   background: var(--cyan);
 }
