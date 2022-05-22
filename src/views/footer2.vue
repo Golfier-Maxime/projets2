@@ -17,12 +17,14 @@
           </RouterLink>
         </div>
         <div class="flex flex-col items-center">
-          <img src="public\icon\mode.png" alt="quete" class="h-8 w-8" />
+          <img src="public\icon\mode.png" alt="quete" class="h-8 w-8 " />
           <p class="font-prompt text-[12px] text-white">Mode</p>
         </div>
         <div class="flex flex-col items-center">
-          <img src="public\icon\boutique.png" alt="quete" class="h-8 w-8" />
+          <RouterLink to="/boutique" class="">
+          <img src="public\icon\boutique.png" alt="quete" class="h-8 w-8 mx-auto" />
           <p class="font-prompt text-[12px] text-white">Boutique</p>
+          </RouterLink>
         </div>
         <div class="flex flex-col items-center">
           <RouterLink to="/apropos" class="">

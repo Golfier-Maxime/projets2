@@ -1,7 +1,7 @@
 <template>
   <div class="mb-3 pt-[45px] text-center text-3xl text-white">
       <h2 class="font-prompt">Politique de confidentialité</h2>
-    </div>
+  </div>
   <div class="bg-white rounded-2xl">
     <div class="pt-3 pb-3">
       <img src="public/icon/Logo_Axolott_black.svg" alt="logo axolott" class="mx-auto">

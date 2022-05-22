@@ -14,29 +14,77 @@
       <div>
         <h3 class=" mb-2 font-medium text-2xl text-center  font-prompt">Maxime GOLFIER</h3>
         <div>  
-          
           <div class="flex justify-center">
-            <div class="cercle_bleu">
-              <img src="public/axolott/axo_main.svg" alt="axolotl de base" class="img_axo" />
+            <div class="cercle_violet">
+              <img src="public/axolott/axo_maxime.svg" alt="axolotl de base" class="img_axo" />
             </div>
+          </div>
+          <div class="flex justify-evenly mt-2 mb-2">
+            <a href=""><img src="public\icon\twitter.png" alt="logo twitter"></a>
+            <a href=""><img src="public\icon\inst.png" alt="logo insta"></a>
+            <a href=""><img src="public\icon\git.png" alt="logo github"></a>
           </div>
         </div>
         <p>Étudiant en première année de MMI, je suis passionné par la programmation et le dévelopement web.
            Vous pouvez me retrouver sur mes réseaux !</p>
       </div>
+      <div>
+        <h3 class=" mb-2 font-medium text-2xl text-center  font-prompt">Allan HIENNE</h3>
+        <div>  
+          <div class="flex justify-center">
+            <div class="cercle_jaune">
+              <img src="public/axolott/axo_allan.svg" alt="axolotl de base" class="img_axo" />
+            </div>
+          </div>
+          <div class="flex justify-evenly mt-2 mb-2">
+            <a href=""><img src="public\icon\twitter.png" alt="logo twitter"></a>
+            <a href=""><img src="public\icon\inst.png" alt="logo insta"></a>
+          
+          </div>
+        </div>
+        <p>Étudiant en première année de MMI, je suis passionné par la programmation et le dévelopement web.
+           Vous pouvez me retrouver sur mes réseaux !</p>
+      </div>
+      <div class="mb-20">
+        <h3 class=" mb-2 font-medium text-2xl text-center  font-prompt">Julien FLEURENT</h3>
+        <div>  
+          <div class="flex justify-center">
+            <div class="cercle_cyan">
+              <img src="public/axolott/axo_julien.svg" alt="axolotl de base" class="img_axo" />
+            </div>
+          </div>
+          <div class="flex justify-evenly mt-2 mb-2">
+            <a href=""><img src="public\icon\twitter.png" alt="logo twitter"></a>
+            <a href=""><img src="public\icon\inst.png" alt="logo insta"></a>
+            <a href=""><img src="public\icon\twitch.png" alt="logo twitch"></a>
+          </div>
+        </div>
+        <p>Étudiant en première année de MMI, je suis passionné par la communcation et de la
+           gestion pour les projets. Vous pouvez me retrouver sur mes réseaux !</p>
+      </div>
     </div>
   </div>
 </template>
 <style>
-.cercle_bleu {
+.cercle_violet {
   width: 250px;
   height: 250px;
   border-radius: 100%;
-  background: var(--cyan);
+  background: #271B3D;
 }
-:root {
-  --cyan: #08a2f1;
+.cercle_jaune {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  background: #FFE484;
 }
+.cercle_cyan {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  background: #08A2F1;
+}
+
 .img_axo {
   margin-top: 50px;
 }
