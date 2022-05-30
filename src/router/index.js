@@ -1,18 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AccueilView from '../views/AccueilView.vue'
-import test from '../views/test.vue'
-import conf2 from '../views/conf2.vue'
+import artiste from '../views/artiste.vue'
+import prog from '../views/prog.vue'
 import apropos from '../views/apropos.vue'
-import boutique from '../views/boutique.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: '/', name: 'Accueil', component: AccueilView },
-    { path: '/test', name: 'test', component: test },
-    { path: '/conf2', name: 'conf2', component: conf2 },
+    { path: '/artiste', name: 'artiste', component: artiste },
+    { path: '/prog', name: 'prog', component: prog },
     { path: '/apropos', name: 'apropos', component: apropos },
-    { path: '/boutique', name: 'boutique', component: boutique },
+
     // ici les autre routes
   ]
 })

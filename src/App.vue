@@ -1,7 +1,7 @@
 <template>
   <div>
     <header2></header2>
-    <body class="bg-Deep-purple">
+    <body class="font_deg">
       <br />
       <RouterLink to="/"></RouterLink>
       <main>
@@ -16,11 +16,16 @@
 
 <script>
 import header2 from "./views/header2.vue";
-import axolott from "./views/axolott.vue";
-import quete from "./views/quete.vue";
 import footer2 from "./views/footer2.vue";
+import prog from "./views/prog.vue";
 
 export default {
-  components: { header2, axolott, quete, footer2 },
+  components: { header2, footer2 },
 };
 </script>
+
+<style>
+.font_deg {
+  background: linear-gradient(#DA9DFF, #9CEDFF);
+}
+</style>

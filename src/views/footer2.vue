@@ -1,44 +1,19 @@
 <template>
-  <div class="footer">
+  <div class="footer black_gray">
     <div class="flex justify-between">
-      <div class="carre_vert">
-        <div class="carre_blanc"></div>
+      <div class="w-[120px] ">
+        <img src="public\Logo_full.svg" alt="logo parazit " class="mt-2 mb-2 ml-3 ">
       </div>
-      <div class="carre_vert2">
-        <div class="carre_blanc2"></div>
+      <div class="flex gap-2 mt-2 mb-2 mr-3 ">
+        <img src="public\icon\logo-instagram-blanc.svg" alt="logo insta" class="w-6">
+        <img src="public\icon\logo-twitter-blanc.svg" alt="logo twitter" class="w-6">
+        <img src="public\icon\logo_youtube.svg" alt="logo youtube" class="w-6">
       </div>
     </div>
-    <div class="bg-green-cyan">
-      <div class="flex justify-evenly pt-2 pb-2">
-        <div class="flex flex-col items-center">
-          <RouterLink to="/">
-            <img src="public\icon\quete.png" alt="quete" class="h-8 w-8 mx-auto" />
-            <p class="font-prompt text-[12px] text-white">Quêtes</p>
-          </RouterLink>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="public\icon\mode.png" alt="quete" class="h-8 w-8 " />
-          <p class="font-prompt text-[12px] text-white">Mode</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <RouterLink to="/boutique" class="">
-          <img src="public\icon\boutique.png" alt="quete" class="h-8 w-8 mx-auto" />
-          <p class="font-prompt text-[12px] text-white">Boutique</p>
-          </RouterLink>
-        </div>
-        <div class="flex flex-col items-center">
-          <RouterLink to="/apropos" class="">
-            <img src="public\icon\apropos.svg" alt="quete" class="h-8 w-8 mx-auto" />
-            <p class="font-prompt text-[12px] text-white">À propos</p>
-          </RouterLink>
-        </div>
-        <div class="flex flex-col items-center">
-          <RouterLink to="/conf2" class="">
-            <img src="public\icon\politique.png" alt="quete" class="h-8 w-8 mx-auto" />
-            <p class="font-prompt text-[12px] text-white">Conf.</p>
-          </RouterLink>
-        </div>
-      </div>
+    <div>
+      <p class="text-white font-mulish text-xs mb-3 ml-3">3 Rue du clair soleil <br>
+      25230 Seloncourt <br>
+      France</p>
     </div>
   </div>
 </template>
