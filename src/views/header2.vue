@@ -8,7 +8,7 @@
                 <div class="flex space-x-4">
                     <!-- Logo -->
                     <div class="flex items-center py-5 px-2">
-                        <RouterLink to="/"><img src="public\Logo.svg"></RouterLink>
+                        <RouterLink to="/"><img src="/Logo.svg"></RouterLink>
                     </div>
                     <!-- Menu -->
                     <div class="hidden  ipad_pro:flex items-center space-x-1">
