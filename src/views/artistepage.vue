@@ -5,7 +5,7 @@
             <div class="line mx-auto"></div>
         </div>
         <div class="flex justify-between mr-3 ml-3 gap-2 mt-4">
-            <img src="public\artiste\vantage.png" alt="">
+            <img src="/artiste\vantage.png" alt="">
             <p class="font-mulish shadow_text  text-white mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
         </div>
         <div>

@@ -21,7 +21,7 @@
           <h3 class="text-center font-prompt font-semibold color-text-black mt-1 shadow_text">Vantage</h3>
         </div>
       </div>
-      <img src="public\icon\arrow-right.svg" alt="" class="">
+      <img src="/icon\arrow-right.svg" alt="" class="">
     </div>
     <RouterLink to="artiste" class="">
       <div class="flex justify-end mr-5">
@@ -40,16 +40,16 @@
     </div>
     <!-- artiste -->
     <div class="flex mt-2 justify-between ml-3 mr-3">
-      <img src="public\icon\arrow-left.svg" alt="">
+      <img src="/icon\arrow-left.svg" alt="">
       <div class="flex flex-col  shadow-box">
         <div>
-          <img src="public\logo.png" alt="">
+          <img src="/logo.png" alt="">
         </div>
         <div class="carre_artiste mt-[-15px]">
           <h3 class="text-center font-prompt font-semibold color-text-black mt-1 shadow_text">18H - Ouverture</h3>
         </div>
       </div>
-      <img src="public\icon\arrow-right.svg" alt="" class="">
+      <img src="/icon\arrow-right.svg" alt="" class="">
     </div>
     <RouterLink to="prog" class="">
       <div class="flex justify-end mr-5">
@@ -68,16 +68,16 @@
     </div>
     <!-- artiste -->
     <div class="flex mt-2 justify-between ml-3 mr-3">
-      <img src="public\icon\arrow-left.svg" alt="">
+      <img src="/icon\arrow-left.svg" alt="">
       <div class="flex flex-col  shadow-box">
         <div>
-          <img src="public\apropos.png" alt="">
+          <img src="/apropos.png" alt="">
         </div>
         <div class="carre_artiste mt-[-15px]">
           <h3 class="text-center font-prompt font-semibold color-text-black mt-1 shadow_text">Le Festival</h3>
         </div>
       </div>
-      <img src="public\icon\arrow-right.svg" alt="" class="">
+      <img src="/icon\arrow-right.svg" alt="" class="">
     </div>
     <RouterLink to="apropos" class="">
       <div class="flex justify-end mr-5">
@@ -96,16 +96,16 @@
     </div>
     <!-- artiste -->
     <div class="flex mt-2 justify-between ml-3 mr-3">
-      <img src="public\icon\arrow-left.svg" alt="">
+      <img src="/icon\arrow-left.svg" alt="">
       <div class="flex flex-col  shadow-box">
         <div>
-          <img src="public\contact.png" alt="">
+          <img src="/contact.png" alt="">
         </div>
         <div class="carre_artiste mt-[-15px]">
           <h3 class="text-center font-prompt font-semibold color-text-black mt-1 shadow_text">Nous contacter</h3>
         </div>
       </div>
-      <img src="public\icon\arrow-right.svg" alt="" class="">
+      <img src="/icon\arrow-right.svg" alt="" class="">
     </div>
     <RouterLink to="contact" class="">
       <div class="flex justify-end mr-5">
