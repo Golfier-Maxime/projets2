@@ -2,12 +2,12 @@
   <div class="footer black_gray">
     <div class="flex justify-between">
       <div class="w-[120px] ">
-        <img src="public\Logo_full.svg" alt="logo parazit " class="mt-2 mb-2 ml-3 ">
+        <img src="/Logo_full.svg" alt="logo parazit " class="mt-2 mb-2 ml-3 ">
       </div>
       <div class="flex gap-2 mt-2 mb-2 mr-3 ">
-        <img src="public\icon\logo-instagram-blanc.svg" alt="logo insta" class="w-6">
-        <img src="public\icon\logo-twitter-blanc.svg" alt="logo twitter" class="w-6">
-        <img src="public\icon\logo_youtube.svg" alt="logo youtube" class="w-6">
+        <img src="/icon\logo-instagram-blanc.svg" alt="logo insta" class="w-6">
+        <img src="/icon\logo-twitter-blanc.svg" alt="logo twitter" class="w-6">
+        <img src="/icon\logo_youtube.svg" alt="logo youtube" class="w-6">
       </div>
     </div>
     <div>
