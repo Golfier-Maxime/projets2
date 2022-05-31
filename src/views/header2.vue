@@ -27,7 +27,7 @@
                 <!-- Bouton menu -->
                 <div class="ipad_pro:hidden flex items-center">
                     <button @click="menuVisible = !menuVisible" class=" py-5 px-2 "> 
-                        <img src="public/icon/menu.svg" alt="menu" class="" />
+                        <img src="/icon/menu.svg" alt="menu" class="" />
                     </button>
                 </div>
                 

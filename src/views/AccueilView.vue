@@ -1,7 +1,7 @@
 <template>
 <!-- start -->
   <div class="mt-16 ml-3 mr-3">
-    <img src="public\Logo_full.svg" alt="logo parazit" class="mx-auto">
+    <img src="/Logo_full.svg" alt="logo parazit" class="mx-auto">
     <h2 class="font-prompt font-semibold text-[16px] text-white text-center mt-2 shadow_text">Le nouveau festival de Futur Funk !</h2>
   </div>
   <!-- article / artiste-->
@@ -12,10 +12,10 @@
     </div>
     <!-- artiste -->
     <div class="flex mt-2 justify-between ml-3 mr-3">
-      <img src="public\icon\arrow-left.svg" alt="">
+      <img src="/icon\arrow-left.svg" alt="">
       <div class="flex flex-col  shadow-box">
         <div>
-          <img src="public\vantage.png" alt="">
+          <img src="/vantage.png" alt="">
         </div>
         <div class="carre_artiste mt-[-15px]">
           <h3 class="text-center font-prompt font-semibold color-text-black mt-1 shadow_text">Vantage</h3>
