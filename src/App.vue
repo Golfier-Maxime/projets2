@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header2></header2>
+  <header2></header2>
     <body class="font_deg">
       <br />
       <RouterLink to="/"></RouterLink>
@@ -17,10 +17,11 @@
 <script>
 import header2 from "./views/header2.vue";
 import footer2 from "./views/footer2.vue";
-import prog from "./views/prog.vue";
+
+
 
 export default {
-  components: { header2, footer2 },
+  components: { header2, footer2,  },
 };
 </script>
 

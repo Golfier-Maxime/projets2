@@ -1,4 +1,5 @@
 <template>
+<div class="pb-20">
     <div class="mt-16 ">
       <h2 class="font-prompt font-semibold text-white shadow_text text-[30px] text-center">Programmation</h2>  
       <div class="line mx-auto"></div>
@@ -16,6 +17,7 @@
             <p class="font-mulish font-bold text-white text-[18px] ml-3 mt-2 mb-2">00h30 : Fermeture</p>
         </div>
     </div>
+</div>
 </template>
 <style>
 .carre_prog {

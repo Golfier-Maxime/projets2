@@ -3,6 +3,9 @@ import AccueilView from '../views/AccueilView.vue'
 import artiste from '../views/artiste.vue'
 import prog from '../views/prog.vue'
 import apropos from '../views/apropos.vue'
+import contact from '../views/contact.vue'
+import mentions from '../views/mentions.vue'
+
 
 
 const router = createRouter({
@@ -12,6 +15,9 @@ const router = createRouter({
     { path: '/artiste', name: 'artiste', component: artiste },
     { path: '/prog', name: 'prog', component: prog },
     { path: '/apropos', name: 'apropos', component: apropos },
+    { path: '/contact', name: 'contact', component: contact },
+    { path: '/mentions', name: 'mentions', component: mentions },
+
 
     // ici les autre routes
   ]

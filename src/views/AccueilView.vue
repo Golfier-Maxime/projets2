@@ -107,12 +107,14 @@
       </div>
       <img src="public\icon\arrow-right.svg" alt="" class="">
     </div>
-    <div class="flex justify-end mr-5">
-      <p class="font-prompt font-bold text-white shadow_text">En savoir plus</p>
-    </div>
-    <div class="flex justify-end mr-3">
-      <div class="line2 "></div>
-    </div> 
+    <RouterLink to="contact" class="">
+      <div class="flex justify-end mr-5">
+        <p class="font-prompt font-bold text-white shadow_text">En savoir plus</p>
+      </div>
+      <div class="flex justify-end mr-3">
+        <div class="line2 "></div>
+      </div> 
+    </RouterLink>
   </div>
 </template>
 
