@@ -5,14 +5,16 @@
       <div class="line mx-auto"></div>
     </div>
     <!-- 1 -->
-    <div class="flex ml-3 mr-3 gap-2">
+    <div class="flex flex-wrap mx-3 justify-center gap-4">
       <!-- artiste / vantage -->
       <div class="flex flex-col ">
         <h3 class="font-mulish font-bold text-white text-[22px] shadow_text text-center">Vantage</h3>
         <img src="public\artiste\vantage.png" alt="vantage" class="box-shadow">
-        <div class="flex justify-center">
-          <img src="public\icon\plus.svg" alt="plus" class="w-10 mt-[-20px] box-shadow2">
-        </div>
+        <RouterLink to="artistepage" class="">
+          <div class="flex justify-center">
+            <img src="public\icon\plus.svg" alt="plus" class="w-10 mt-[-20px] box-shadow2">
+          </div>
+        </RouterLink>
       </div>
       <!-- artiste / engelwood -->
       <div class="flex flex-col ">
@@ -22,9 +24,7 @@
           <img src="public\icon\plus.svg" alt="plus" class="w-10 mt-[-20px] box-shadow2">
         </div>
       </div>
-    </div>
-    <!-- 2 -->
-    <div class="flex ml-3 mr-3 gap-2">
+
       <!-- artiste / vantage -->
       <div class="flex flex-col ">
         <h3 class="font-mulish font-bold text-white text-[22px] shadow_text text-center">NightTempo</h3>
@@ -41,9 +41,7 @@
           <img src="public\icon\plus.svg" alt="plus" class="w-10 mt-[-20px] box-shadow2">
         </div>
       </div>
-    </div>
-    <!-- 3 -->
-    <div class="flex ml-3 mr-3 gap-2">
+    
       <!-- artiste / YungBae -->
       <div class="flex flex-col ">
         <h3 class="font-mulish font-bold text-white text-[22px] shadow_text text-center">YungBae</h3>
@@ -60,9 +58,7 @@
           <img src="public\icon\plus.svg" alt="plus" class="w-10 mt-[-20px] box-shadow2">
         </div>
       </div>
-    </div>
-    <!-- 3 -->
-    <div class="flex ml-3 mr-3 gap-2">
+    
       <!-- artiste / desired -->
       <div class="flex flex-col ">
         <h3 class="font-mulish font-bold text-white text-[22px] shadow_text text-center">Desired</h3>
