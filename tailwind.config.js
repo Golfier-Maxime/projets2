@@ -20,6 +20,12 @@ module.exports = {
         "mulish": "Mulish",
         "prompt": "Prompt"
       },
+      screens: {
+        'ipad_mini': '744px',
+        'ipad_pro': '1024px',
+        'desktop': '1440px',
+
+      },
     },
   },
   plugins: [],

@@ -12,16 +12,16 @@
                     </div>
                     <!-- Menu -->
                     <div class="hidden  ipad_pro:flex items-center space-x-1">
-                        <RouterLink class="py-5 px-2 hover:text-Gris" to="/">Accueil</RouterLink>
-                        <RouterLink class="py-5 px-2 hover:text-Gris" to="/programme">Programme</RouterLink>
-                        <RouterLink class="py-5 px-2 hover:text-Gris" to="/artistes">Groupe</RouterLink>
-                        <RouterLink class="py-5 px-2 hover:text-Gris" to="/artiste">Artistes</RouterLink>
-                        <RouterLink class="py-5 px-2 hover:text-Gris" to="/mentions">Mentions</RouterLink>  
+                        <RouterLink class="py-5 px-2 hover:text-Gris text-white font-prompt font-semibold" to="/">Accueil</RouterLink>
+                        <RouterLink class="py-5 px-2 hover:text-Gris text-white font-prompt font-semibold" to="/prog">Programme</RouterLink>
+                        <RouterLink class="py-5 px-2 hover:text-Gris text-white font-prompt font-semibold" to="/artiste">Artiste</RouterLink>
+                        <RouterLink class="py-5 px-2 hover:text-Gris text-white font-prompt font-semibold" to="/concert">Concert</RouterLink>
+                        <RouterLink class="py-5 px-2 hover:text-Gris text-white font-prompt font-semibold" to="/mentions">Mentions Légales</RouterLink>  
                     </div>
                 </div>
                 <div class="hidden  ipad_pro:flex items-center space-x-1">
-                    <RouterLink class="py-5 px-2 hover:text-Gris" to="/bar">Le Bar</RouterLink> 
-                    <RouterLink class="py-5 px-2 hover:text-Gris" to="/concert">Concerts</RouterLink>
+                    <RouterLink class="py-5 px-2 hover:text-Gris text-white font-prompt font-semibold" to="/contact">Contact</RouterLink> 
+                    <RouterLink class="py-5 px-2 hover:text-Gris text-white font-prompt font-semibold" to="/apropos">A propos</RouterLink>
                 </div>
 
                 <!-- Bouton menu -->
