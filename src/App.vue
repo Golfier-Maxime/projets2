@@ -1,7 +1,9 @@
 <template>
-  <div>
+
+  <div class="font_deg  ">
+    
   <header2></header2>
-    <body class="font_deg">
+    <body >
       <br />
       <RouterLink to="/"></RouterLink>
       <main>
@@ -12,6 +14,7 @@
     </body>
     <footer2></footer2>
   </div>
+  
 </template>
 
 <script>
