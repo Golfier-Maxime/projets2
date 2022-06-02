@@ -4,7 +4,7 @@
         <p>{{artiste.nom}}</p>
     </div>
 </div> -->
-<div class="mb-32">
+<div class="pb-32 ">
     <div class="mt-16 ">
       <h2 class="font-prompt font-semibold text-white shadow_text text-[30px] text-center">Artiste</h2>  
       <div class="line mx-auto"></div>
@@ -17,7 +17,7 @@
         <div class="flex justify-center gap-2">
             <input type="text" class="" v-model="nom" required />
             <button
-            class=""
+            class="bouton_liste"
             type="button"
             @click="createArtiste()"
             title="Création"
@@ -27,20 +27,22 @@
         </div>
       </div>
     </form>
-      <table class="">
-        <thead>
+      <table class="w-max mx-auto">
+        <thead class="">
           <tr>
-            <th scope="">
+            <th >
               <div class="">Liste des Artistes actuels</div>
               <span class="">
                 <div class="">
                   <div class="">
                     <span class="">Filtrage</span>
                   </div>
-                  <input type="text" class="" v-model="filter" />
-                  <button class="" type="submit" title="Création">
-                    <i class=""></i>
-                  </button>
+                  <div>
+                    <input type="text" class="" v-model="filter" />
+                    <button class="bouton_liste" type="submit" title="Création">
+                        Filtrer
+                    </button>
+                  </div>
                 </div>
               </span>
             </th>
@@ -52,7 +54,7 @@
               <form>
                 <div class="">
                   <div class="">
-                    <span class="">Nom</span>
+                    <span class="">Nom de l'artiste</span>
                   </div>
                   <input
                     type="text"
@@ -61,7 +63,7 @@
                     required
                   />
                   <button
-                    class=""
+                    class="bouton_liste"
                     type="submit"
                     title="Création"
                     @click.prevent="updateArtiste(artiste)"
@@ -69,7 +71,7 @@
                     Modif
                   </button>
                   <button
-                    class=""
+                    class="bouton_liste"
                     type="submit"
                     title="Suppression"
                     @click.prevent="deleteArtiste(artiste)"
@@ -85,6 +87,20 @@
     </div>
 </template>
 
+<style>
+.bouton_liste {
+    background-color:  cyan;
+    border: none;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+    
+}
+</style>
 
 <script>
 import {
