@@ -1,9 +1,7 @@
 <template>
-
-  <div class="font_deg  ">
-    
-  <header2></header2>
-    <body >
+  <div class="font_deg">
+    <header2></header2>
+    <body>
       <br />
       <RouterLink to="/"></RouterLink>
       <main>
@@ -14,22 +12,19 @@
     </body>
     <footer2></footer2>
   </div>
-  
 </template>
 
 <script>
 import header2 from "./views/header2.vue";
 import footer2 from "./views/footer2.vue";
 
-
-
 export default {
-  components: { header2, footer2,  },
+  components: { header2, footer2 },
 };
 </script>
 
 <style>
 .font_deg {
-  background: linear-gradient(#DA9DFF, #9CEDFF);
+  background: linear-gradient(#da9dff, #9cedff);
 }
 </style>

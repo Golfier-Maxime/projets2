@@ -1,19 +1,21 @@
 <template>
   <div class="footer black_gray">
     <div class="flex justify-between">
-      <div class="w-[120px] ">
-        <img src="/Logo_full.svg" alt="logo parazit " class="mt-2 mb-2 ml-3 ">
+      <div class="w-[120px]">
+        <img src="/Logo_full.svg" alt="logo parazit " class="mt-2 mb-2 ml-3" />
       </div>
-      <div class="flex gap-2 mt-2 mb-2 mr-3 ">
-        <img src="/icon\logo-instagram-blanc.svg" alt="logo insta" class="w-6">
-        <img src="/icon\logo-twitter-blanc.svg" alt="logo twitter" class="w-6">
-        <img src="/icon\logo_youtube.svg" alt="logo youtube" class="w-6">
+      <div class="mt-2 mb-2 mr-3 flex gap-2">
+        <img src="/icon\logo-instagram-blanc.svg" alt="logo insta" class="w-6" />
+        <img src="/icon\logo-twitter-blanc.svg" alt="logo twitter" class="w-6" />
+        <img src="/icon\logo_youtube.svg" alt="logo youtube" class="w-6" />
       </div>
     </div>
     <div>
-      <p class="text-white font-mulish text-xs mb-3 ml-3">3 Rue du clair soleil <br>
-      25230 Seloncourt <br>
-      France</p>
+      <p class="mb-3 ml-3 font-mulish text-xs text-white">
+        3 Rue du clair soleil <br />
+        25230 Seloncourt <br />
+        France
+      </p>
     </div>
   </div>
 </template>

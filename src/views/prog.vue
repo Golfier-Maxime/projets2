@@ -1,31 +1,30 @@
 <template>
-<div class="pb-20">
-    <div class="mt-16 ">
-      <h2 class="font-prompt font-semibold text-white shadow_text text-[30px] text-center">Programmation</h2>  
+  <div class="pb-20">
+    <div class="mt-16">
+      <h2 class="shadow_text text-center font-prompt text-[30px] font-semibold text-white">Programmation</h2>
       <div class="line mx-auto"></div>
     </div>
-    <div class="flex justify-center mt-3">
-        <div class="carre_prog  ml-5 mr-5">
-            <p class="font-mulish font-bold text-white text-[18px] ml-3 mt-2">18h : Ouverture</p>
-            <p class="font-mulish font-bold text-white text-[18px] ml-3 mt-2">18h30 : Vantage</p>
-            <p class="font-mulish font-bold text-white text-[18px] ml-3 mt-2">19h : EngelWood</p>
-            <p class="font-mulish font-bold text-white text-[18px] ml-3 mt-2">20h : Night Tempo</p>
-            <p class="font-mulish font-bold text-white text-[18px] ml-3 mt-2">21h : MACROSS 82-99</p>
-            <p class="font-mulish font-bold text-white text-[18px] ml-3 mt-2">22h : Yung Bae</p>
-            <p class="font-mulish font-bold text-white text-[18px] ml-3 mt-2">23h : Moe Shop</p>
-            <p class="font-mulish font-bold text-white text-[18px] ml-3 mt-2">00h : Desired</p>
-            <p class="font-mulish font-bold text-white text-[18px] ml-3 mt-2 mb-2">00h30 : Fermeture</p>
-        </div>
+    <div class="mt-3 flex justify-center">
+      <div class="carre_prog ml-5 mr-5">
+        <p class="ml-3 mt-2 font-mulish text-[18px] font-bold text-white">18h : Ouverture</p>
+        <p class="ml-3 mt-2 font-mulish text-[18px] font-bold text-white">18h30 : Vantage</p>
+        <p class="ml-3 mt-2 font-mulish text-[18px] font-bold text-white">19h : EngelWood</p>
+        <p class="ml-3 mt-2 font-mulish text-[18px] font-bold text-white">20h : Night Tempo</p>
+        <p class="ml-3 mt-2 font-mulish text-[18px] font-bold text-white">21h : MACROSS 82-99</p>
+        <p class="ml-3 mt-2 font-mulish text-[18px] font-bold text-white">22h : Yung Bae</p>
+        <p class="ml-3 mt-2 font-mulish text-[18px] font-bold text-white">23h : Moe Shop</p>
+        <p class="ml-3 mt-2 font-mulish text-[18px] font-bold text-white">00h : Desired</p>
+        <p class="ml-3 mt-2 mb-2 font-mulish text-[18px] font-bold text-white">00h30 : Fermeture</p>
+      </div>
     </div>
-</div>
+  </div>
 </template>
 <style>
 .carre_prog {
   width: 260px;
   height: 100%;
   border-radius: 10px;
-  background: #C7017F50;
-  
+  background: #c7017f50;
 }
 </style>
 

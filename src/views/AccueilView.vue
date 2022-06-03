@@ -1,127 +1,126 @@
 <template>
-<!-- start -->
+  <!-- start -->
   <div class="mt-16 ml-3 mr-3">
-    <img src="/Logo_full.svg" alt="logo parazit" class="mx-auto">
-    <h2 class="font-prompt font-semibold text-[16px] text-white text-center mt-2 shadow_text">Le nouveau festival de Futur Funk !</h2>
+    <img src="/Logo_full.svg" alt="logo parazit" class="mx-auto" />
+    <h2 class="shadow_text mt-2 text-center font-prompt text-[16px] font-semibold text-white">Le nouveau festival de Futur Funk !</h2>
   </div>
   <div class="flex flex-wrap justify-center">
     <!-- article / artiste-->
     <div class="mt-5">
       <div>
-        <h2 class="font-prompt font-bold text-[18px] text-center text-white shadow_text">ARTISTE</h2>
+        <h2 class="shadow_text text-center font-prompt text-[18px] font-bold text-white">ARTISTE</h2>
         <div class="line mx-auto"></div>
       </div>
       <!-- artiste -->
-      <div class="flex mt-2 justify-between ml-3 mr-3 gap-4 ">
-        <img src="/icon\arrow-left.svg" alt="" class="">
-        <div class="flex flex-col  shadow-box">
+      <div class="mt-2 ml-3 mr-3 flex justify-between gap-4">
+        <img src="/icon\arrow-left.svg" alt="" class="" />
+        <div class="shadow-box flex flex-col">
           <div>
-            <img src="/vantage.jpg" alt="">
+            <img src="/vantage.jpg" alt="" />
           </div>
           <div class="carre_artiste mt-[-15px]">
-            <h3 class="text-center font-prompt font-semibold color-text-black mt-1 shadow_text">Vantage</h3>
+            <h3 class="color-text-black shadow_text mt-1 text-center font-prompt font-semibold">Vantage</h3>
           </div>
         </div>
-        <img src="/icon\arrow-right.svg" alt="" class="">
+        <img src="/icon\arrow-right.svg" alt="" class="" />
       </div>
       <RouterLink to="artiste" class="">
-        <div class="flex justify-end mr-5">
-          <p class="font-prompt font-bold text-white shadow_text">En savoir plus</p>
+        <div class="mr-5 flex justify-end">
+          <p class="shadow_text font-prompt font-bold text-white">En savoir plus</p>
         </div>
-        <div class="flex justify-end mr-3">
-          <div class="line2 "></div>
+        <div class="mr-3 flex justify-end">
+          <div class="line2"></div>
         </div>
-      </RouterLink> 
+      </RouterLink>
     </div>
     <!-- article / programmation -->
     <div class="mt-5">
       <div>
-        <h2 class="font-prompt font-bold text-[18px] text-center text-white shadow_text">PROGRAMMATION</h2>
+        <h2 class="shadow_text text-center font-prompt text-[18px] font-bold text-white">PROGRAMMATION</h2>
         <div class="line mx-auto"></div>
       </div>
       <!-- artiste -->
-      <div class="flex mt-2 justify-between ml-3 mr-3 gap-4">
-        <img src="/icon\arrow-left.svg" alt="">
-        <div class="flex flex-col  shadow-box">
+      <div class="mt-2 ml-3 mr-3 flex justify-between gap-4">
+        <img src="/icon\arrow-left.svg" alt="" />
+        <div class="shadow-box flex flex-col">
           <div>
-            <img src="/logo.png" alt="">
+            <img src="/logo.png" alt="" />
           </div>
           <div class="carre_artiste mt-[-15px]">
-            <h3 class="text-center font-prompt font-semibold color-text-black mt-1 shadow_text">18H - Ouverture</h3>
+            <h3 class="color-text-black shadow_text mt-1 text-center font-prompt font-semibold">18H - Ouverture</h3>
           </div>
         </div>
-        <img src="/icon\arrow-right.svg" alt="" class="">
+        <img src="/icon\arrow-right.svg" alt="" class="" />
       </div>
       <RouterLink to="prog" class="">
-        <div class="flex justify-end mr-5">
-          <p class="font-prompt font-bold text-white shadow_text">En savoir plus</p>
+        <div class="mr-5 flex justify-end">
+          <p class="shadow_text font-prompt font-bold text-white">En savoir plus</p>
         </div>
       </RouterLink>
-      <div class="flex justify-end mr-3">
-        <div class="line2 "></div>
-      </div> 
+      <div class="mr-3 flex justify-end">
+        <div class="line2"></div>
+      </div>
     </div>
     <!-- article / apropos -->
     <div class="mt-5">
       <div>
-        <h2 class="font-prompt font-bold text-[18px] text-center text-white shadow_text">A PROPOS</h2>
+        <h2 class="shadow_text text-center font-prompt text-[18px] font-bold text-white">A PROPOS</h2>
         <div class="line mx-auto"></div>
       </div>
       <!-- artiste -->
-      <div class="flex mt-2 justify-between ml-3 mr-3 gap-4">
-        <img src="/icon\arrow-left.svg" alt="">
-        <div class="flex flex-col  shadow-box">
+      <div class="mt-2 ml-3 mr-3 flex justify-between gap-4">
+        <img src="/icon\arrow-left.svg" alt="" />
+        <div class="shadow-box flex flex-col">
           <div>
-            <img src="/apropos.png" alt="">
+            <img src="/apropos.png" alt="" />
           </div>
           <div class="carre_artiste mt-[-15px]">
-            <h3 class="text-center font-prompt font-semibold color-text-black mt-1 shadow_text">Le Festival</h3>
+            <h3 class="color-text-black shadow_text mt-1 text-center font-prompt font-semibold">Le Festival</h3>
           </div>
         </div>
-        <img src="/icon\arrow-right.svg" alt="" class="">
+        <img src="/icon\arrow-right.svg" alt="" class="" />
       </div>
       <RouterLink to="apropos" class="">
-        <div class="flex justify-end mr-5">
-          <p class="font-prompt font-bold text-white shadow_text">En savoir plus</p>
+        <div class="mr-5 flex justify-end">
+          <p class="shadow_text font-prompt font-bold text-white">En savoir plus</p>
         </div>
-        <div class="flex justify-end mr-3">
-          <div class="line2 "></div>
+        <div class="mr-3 flex justify-end">
+          <div class="line2"></div>
         </div>
-      </RouterLink> 
+      </RouterLink>
     </div>
     <!-- article / contact -->
     <div class="mt-5 pb-32">
       <div>
-        <h2 class="font-prompt font-bold text-[18px] text-center text-white shadow_text">CONTACT</h2>
+        <h2 class="shadow_text text-center font-prompt text-[18px] font-bold text-white">CONTACT</h2>
         <div class="line mx-auto"></div>
       </div>
       <!-- artiste -->
-      <div class="flex mt-2 justify-between ml-3 mr-3 gap-4">
-        <img src="/icon\arrow-left.svg" alt="">
-        <div class="flex flex-col  shadow-box">
+      <div class="mt-2 ml-3 mr-3 flex justify-between gap-4">
+        <img src="/icon\arrow-left.svg" alt="" />
+        <div class="shadow-box flex flex-col">
           <div>
-            <img src="/contact.png" alt="">
+            <img src="/contact.png" alt="" />
           </div>
           <div class="carre_artiste mt-[-15px]">
-            <h3 class="text-center font-prompt font-semibold color-text-black mt-1 shadow_text">Nous contacter</h3>
+            <h3 class="color-text-black shadow_text mt-1 text-center font-prompt font-semibold">Nous contacter</h3>
           </div>
         </div>
-        <img src="/icon\arrow-right.svg" alt="" class="">
+        <img src="/icon\arrow-right.svg" alt="" class="" />
       </div>
       <RouterLink to="contact" class="">
-        <div class="flex justify-end mr-5">
-          <p class="font-prompt font-bold text-white shadow_text">En savoir plus</p>
+        <div class="mr-5 flex justify-end">
+          <p class="shadow_text font-prompt font-bold text-white">En savoir plus</p>
         </div>
-        <div class="flex justify-end mr-3">
-          <div class="line2 "></div>
-        </div> 
+        <div class="mr-3 flex justify-end">
+          <div class="line2"></div>
+        </div>
       </RouterLink>
     </div>
   </div>
 </template>
 
 <script>
-
 </script>
 <style>
 .shadow_text {
@@ -132,7 +131,7 @@
   border-radius: 10px;
 }
 .color-text-black {
-  color: #1D1D1B;
+  color: #1d1d1b;
 }
 .line {
   width: 240px;

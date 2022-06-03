@@ -1,96 +1,76 @@
 <template>
-<!-- <div class="mt-32">
+  <!-- <div class="mt-32">
     <div v-for="artiste in listeArtisteSynchro" :key="artiste.ID">
         <p>{{artiste.nom}}</p>
     </div>
 </div> -->
-<div class="pb-32 ">
-    <div class="mt-16 ">
-      <h2 class="font-prompt font-semibold text-white shadow_text text-[30px] text-center">Artiste</h2>  
+  <div class="pb-32">
+    <div class="mt-16">
+      <h2 class="shadow_text text-center font-prompt text-[30px] font-semibold text-white">Liste Artiste</h2>
       <div class="line mx-auto"></div>
     </div>
-     <form>
+    <form>
       <div class="flex flex-col justify-center">
         <div class="">
-          <p class="font-prompt font-semibold text-white shadow_text text-[25px] text-center">Ajouter un artiste</p>
+          <p class="shadow_text text-center font-prompt text-[25px] font-semibold text-white">Ajouter un artiste</p>
         </div>
-        
       </div>
     </form>
-      <table class="w-max mx-auto">
-        <thead class="">
-          <tr>
-            <th >
-              <div class="">Liste des Artistes actuels</div>
-              <span class="">
+    <table class="mx-auto w-max">
+      <thead class="">
+        <tr>
+          <th>
+            <span class="">
+              <div class="">
                 <div class="">
-                  <div class="">
-                    <span class="">Filtrage</span>
-                  </div>
-                  <div>
-                    <input type="text" class="" v-model="filter" />
-                    <button class="bouton_liste" type="submit" title="Création">
-                        Filtrer
-                    </button>
-                  </div>
+                  <span class="shadow_text text-center font-prompt text-[25px] font-semibold text-white">Filtrage</span>
                 </div>
-              </span>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="artiste in filterByName" :key="artiste.id">
-            <td>
-              <form>
-                <div class="">
-                  <div class="">
-                    <span class="">Nom de l'artiste</span>
-                  </div>
-                  <input
-                    type="text"
-                    class=""
-                    v-model="artiste.nom"
-                    required
-                  />
-                  <img :src="artiste.image" alt="">
-                  <button
-                    class="bouton_liste"
-                    type="submit"
-                    title="Création"
-                    @click.prevent="updateArtiste(artiste)"
-                  >
-                    Modif
-                  </button>
-                  <button
-                    class="bouton_liste"
-                    type="submit"
-                    title="Suppression"
-                    @click.prevent="deleteArtiste(artiste)"
-                  >
-                  DELETE
-                  </button>
+                <div class="flex justify-center gap-4">
+                  <input type="text" class="" v-model="filter" />
+                  <button class="bouton_liste" type="submit" title="Création">Filtrer</button>
                 </div>
-              </form>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    
+              </div>
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="artiste in filterByName" :key="artiste.id">
+          <td>
+            <form>
+              <div class="">
+                <div class="flex flex-col justify-center">
+                  <p class="shadow_text mt-2 text-center font-prompt text-[25px] font-semibold text-white">Nom de l'artiste</p>
+
+                  <input type="text" class="" v-model="artiste.nom" required />
+                </div>
+                <div class="mt-2 mb-2 flex justify-center">
+                  <img :src="artiste.image" alt="" />
+                </div>
+                <div class="flex justify-center gap-4">
+                  <button class="bouton_liste" type="submit" title="Création" @click.prevent="updateArtiste(artiste)">Modif</button>
+                  <button class="bouton_liste" type="submit" title="Suppression" @click.prevent="deleteArtiste(artiste)">DELETE</button>
+                </div>
+              </div>
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </template>
 
 <style>
 .bouton_liste {
-    background-color:  cyan;
-    border: none;
-    color: white;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px black;
-    
+  background-color: cyan;
+  border: none;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px black;
 }
 </style>
 
@@ -112,7 +92,7 @@ export default {
     return {
       listeArtisteSynchro: [],
       filter: "",
-      artiste:{
+      artiste: {
         image: null,
       },
       nom: null,
@@ -153,45 +133,45 @@ export default {
       await deleteDoc(docRef);
     },
   },
-//   computed: {
-//     searchByName() {
-//       let q = this.q;
-//       return this.listeArtisteSynchro.filter(function (artiste) {
-//         return artiste.nom.includes(q);
-//       });
-//     },
-//   },
- computed:{
+  //   computed: {
+  //     searchByName() {
+  //       let q = this.q;
+  //       return this.listeArtisteSynchro.filter(function (artiste) {
+  //         return artiste.nom.includes(q);
+  //       });
+  //     },
+  //   },
+  computed: {
     // Tri des pays par nom en ordre croissant
-    orderByName:function(){
+    orderByName: function () {
       // Parcours et tri des pays 2 à 2
-      return this.listeArtisteSynchro.sort(function(a,b){
+      return this.listeArtisteSynchro.sort(function (a, b) {
         // Si le nom du pays est avant on retourne -1
-        if(a.nom < b.nom) return -1;
+        if (a.nom < b.nom) return -1;
         // Si le nom du pays est après on retourne 1
-        if(a.nom > b.nom) return 1;
+        if (a.nom > b.nom) return 1;
         // Sinon ni avant ni après (homonyme) on retourne 0
         return 0;
       });
     },
     // Filtrage de la propriété calculée de tri
-    filterByName:function(){
+    filterByName: function () {
       // On effectue le fitrage seulement si le filtre est rnseigné
-      if(this.filter.length > 0){
+      if (this.filter.length > 0) {
         // On récupère le filtre saisi en minuscule (on évite les majuscules)
         let filter = this.filter.toLowerCase();
         // Filtrage de la propriété calculée de tri
-        return this.orderByName.filter(function(artiste){
-          // On ne renvoie que les pays dont le nom contient 
+        return this.orderByName.filter(function (artiste) {
+          // On ne renvoie que les pays dont le nom contient
           // la chaine de caractère du filtre
           return artiste.nom.toLowerCase().includes(filter);
-        })
-      }else{
+        });
+      } else {
         // Si le filtre n'est pas saisi
         // On renvoie l'intégralité de la liste triée
         return this.orderByName;
       }
-    }
+    },
   },
 };
 </script>
