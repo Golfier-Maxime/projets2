@@ -8,6 +8,7 @@ import mentions from '../views/mentions.vue'
 import artistepage from '../views/artistepage.vue'
 import PageNotFound from '../views/PageNotFound.vue'
 import ListeArtiste from '../views/ListeArtiste.vue'
+import Create from '../views/Create.vue'
 
 
 
@@ -23,6 +24,7 @@ const router = createRouter({
     { path: '/artistepage', name: 'artistepage', component: artistepage },
     { path: '/:patchMatch(.*)*', name: 'NotFound', component: PageNotFound },
     { path: '/ListeArtiste', name: 'ListeArtiste', component: ListeArtiste },
+    { path: '/Create', name: 'Create', component: Create },
 
     // ici les autre routes
   ]

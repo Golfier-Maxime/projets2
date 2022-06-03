@@ -14,17 +14,7 @@
         <div class="">
           <p class="font-prompt font-semibold text-white shadow_text text-[25px] text-center">Ajouter un artiste</p>
         </div>
-        <div class="flex justify-center gap-2">
-            <input type="text" class="" v-model="nom" required />
-            <button
-            class="bouton_liste"
-            type="button"
-            @click="createArtiste()"
-            title="Création"
-            >
-            ADD
-            </button>
-        </div>
+        
       </div>
     </form>
       <table class="w-max mx-auto">
@@ -62,6 +52,7 @@
                     v-model="artiste.nom"
                     required
                   />
+                  <img :src="artiste.image" alt="">
                   <button
                     class="bouton_liste"
                     type="submit"
@@ -85,6 +76,7 @@
         </tbody>
       </table>
     </div>
+    
 </template>
 
 <style>
@@ -119,9 +111,11 @@ export default {
   data() {
     return {
       listeArtisteSynchro: [],
-      nom: null,
       filter: "",
-      
+      artiste:{
+        image: null,
+      },
+      nom: null,
     };
   },
   mounted() {
