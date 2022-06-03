@@ -12,11 +12,11 @@
         <div class="line mx-auto"></div>
       </div>
       <!-- artiste -->
-      <div class="flex mt-2 justify-between ml-3 mr-3 gap-4">
-        <img src="/icon\arrow-left.svg" alt="">
+      <div class="flex mt-2 justify-between ml-3 mr-3 gap-4 ">
+        <img src="/icon\arrow-left.svg" alt="" class="">
         <div class="flex flex-col  shadow-box">
           <div>
-            <img src="/vantage.png" alt="">
+            <img src="/vantage.jpg" alt="">
           </div>
           <div class="carre_artiste mt-[-15px]">
             <h3 class="text-center font-prompt font-semibold color-text-black mt-1 shadow_text">Vantage</h3>
