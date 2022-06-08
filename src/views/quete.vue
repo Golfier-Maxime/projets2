@@ -1,7 +1,7 @@
 <template>
   <div class="rounded-2xl bg-white">
     <!-- TITRE : MES QUETES -->
-    <div class="text-Dark-purple flex justify-center gap-4 pt-2 pb-2">
+    <div class="flex justify-center gap-4 pt-2 pb-2 text-Dark-purple">
       <h1 class="font-prompt text-2xl">Mes Quêtes</h1>
       <img src="public/icon/trophee.png" alt="logo de trophée" />
     </div>
@@ -12,15 +12,15 @@
         <p class="font-prompt text-Dark-purple">23h</p>
       </div>
       <div class="ml-8 mr-8 drop-shadow-md">
-        <div class="bg-green-cyan flex justify-between rounded-t-xl pt-2 pb-2">
+        <div class="flex justify-between rounded-t-xl bg-green-cyan pt-2 pb-2">
           <div class="">
-            <p class="font-mulish ml-4 text-white">...</p>
+            <p class="ml-4 font-mulish text-white">...</p>
           </div>
           <div class="carre_check mr-4 bg-white"></div>
         </div>
         <div class="flex justify-between rounded-b-xl bg-white pt-2 pb-2">
           <div>
-            <p class="font-mulish text-gris ml-2 text-[11px]">Définissez votre quête</p>
+            <p class="text-gris ml-2 font-mulish text-[11px]">Définissez votre quête</p>
           </div>
           <div class="mr-2 flex">
             <p class="font-prompt">10</p>
@@ -36,15 +36,15 @@
         <p class="font-prompt text-Dark-purple">6j</p>
       </div>
       <div class="ml-8 mr-8 drop-shadow-md">
-        <div class="bg-green-cyan flex justify-between rounded-t-xl pt-2 pb-2">
+        <div class="flex justify-between rounded-t-xl bg-green-cyan pt-2 pb-2">
           <div class="">
-            <p class="font-mulish ml-4 text-white">Faire 2km de marche</p>
+            <p class="ml-4 font-mulish text-white">Faire 2km de marche</p>
           </div>
           <div class="carre_check mr-4 bg-white"></div>
         </div>
         <div class="flex justify-between rounded-b-xl bg-white pt-2 pb-2">
           <div>
-            <p class="font-mulish text-gris ml-2 text-[11px]">Faire le tour du stade</p>
+            <p class="text-gris ml-2 font-mulish text-[11px]">Faire le tour du stade</p>
           </div>
           <div class="mr-2 flex">
             <p class="font-prompt">10</p>
@@ -60,15 +60,15 @@
         <p class="font-prompt text-Dark-purple">23h</p>
       </div>
       <div class="ml-8 mr-8 drop-shadow-md">
-        <div class="bg-cyanAxolott flex justify-between rounded-t-xl pt-2 pb-2">
+        <div class="flex justify-between rounded-t-xl bg-cyanAxolott pt-2 pb-2">
           <div class="">
-            <p class="font-mulish ml-4 text-white">Passer l’aspirateur</p>
+            <p class="ml-4 font-mulish text-white">Passer l’aspirateur</p>
           </div>
           <div class="carre_check mr-4 bg-white"></div>
         </div>
         <div class="flex justify-between rounded-b-xl bg-white pt-2 pb-2">
           <div>
-            <p class="font-mulish text-gris ml-2 text-[11px]">Passer l’aspirateur dans tout ...</p>
+            <p class="text-gris ml-2 font-mulish text-[11px]">Passer l’aspirateur dans tout ...</p>
           </div>
           <div class="mr-2 flex">
             <p class="font-prompt">10</p>
@@ -84,15 +84,15 @@
         <p class="font-prompt text-Dark-purple">23h</p>
       </div>
       <div class="ml-8 mr-8 drop-shadow-md">
-        <div class="bg-cyanAxolott flex justify-between rounded-t-xl pt-2 pb-2">
+        <div class="flex justify-between rounded-t-xl bg-cyanAxolott pt-2 pb-2">
           <div class="">
-            <p class="font-mulish ml-4 text-white">Passer l’aspirateur</p>
+            <p class="ml-4 font-mulish text-white">Passer l’aspirateur</p>
           </div>
           <div class="carre_check mr-4 bg-white"></div>
         </div>
         <div class="flex justify-between rounded-b-xl bg-white pt-2 pb-2">
           <div>
-            <p class="font-mulish text-gris ml-2 text-[11px]">Passer l’aspirateur dans tout ...</p>
+            <p class="text-gris ml-2 font-mulish text-[11px]">Passer l’aspirateur dans tout ...</p>
           </div>
           <div class="mr-2 flex">
             <p class="font-prompt">10</p>
@@ -108,15 +108,15 @@
         <p class="font-prompt text-Dark-purple">23h</p>
       </div>
       <div class="ml-8 mr-8 drop-shadow-md">
-        <div class="bg-cyanAxolott flex justify-between rounded-t-xl pt-2 pb-2">
+        <div class="flex justify-between rounded-t-xl bg-cyanAxolott pt-2 pb-2">
           <div class="">
-            <p class="font-mulish ml-4 text-white">Passer l’aspirateur</p>
+            <p class="ml-4 font-mulish text-white">Passer l’aspirateur</p>
           </div>
           <div class="carre_check mr-4 bg-white"></div>
         </div>
         <div class="flex justify-between rounded-b-xl bg-white pt-2 pb-2">
           <div>
-            <p class="font-mulish text-gris ml-2 text-[11px]">Passer l’aspirateur dans tout ...</p>
+            <p class="text-gris ml-2 font-mulish text-[11px]">Passer l’aspirateur dans tout ...</p>
           </div>
           <div class="mr-2 flex">
             <p class="font-prompt">10</p>
@@ -132,15 +132,15 @@
         <p class="font-prompt text-Dark-purple">23h</p>
       </div>
       <div class="ml-8 mr-8 drop-shadow-md">
-        <div class="bg-cyanAxolott flex justify-between rounded-t-xl pt-2 pb-2">
+        <div class="flex justify-between rounded-t-xl bg-cyanAxolott pt-2 pb-2">
           <div class="">
-            <p class="font-mulish ml-4 text-white">Passer l’aspirateur</p>
+            <p class="ml-4 font-mulish text-white">Passer l’aspirateur</p>
           </div>
           <div class="carre_check mr-4 bg-white"></div>
         </div>
         <div class="flex justify-between rounded-b-xl bg-white pt-2 pb-2">
           <div>
-            <p class="font-mulish text-gris ml-2 text-[11px]">Passer l’aspirateur dans tout ...</p>
+            <p class="text-gris ml-2 font-mulish text-[11px]">Passer l’aspirateur dans tout ...</p>
           </div>
           <div class="mr-2 flex">
             <p class="font-prompt">10</p>
