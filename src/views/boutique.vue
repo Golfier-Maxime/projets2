@@ -9,7 +9,7 @@
     <article class="mt-6 ml-6 mr-6 flex flex-col">
       <h4 class="ml-14 font-prompt text-2xl font-medium">Mug</h4>
       <div class="carre_boutique mx-auto">
-        <img src="public\Mug_Axolott.png" alt="" />
+        <img src="\Mug_Axolott.png" alt="" />
       </div>
       <div class="ml-6 mr-6 mt-2 flex justify-around">
         <h4 class="font-prompt text-2xl font-medium">4,99 €</h4>
@@ -19,7 +19,7 @@
     <article class="mt-6 ml-6 mr-6 flex flex-col">
       <h4 class="ml-14 font-prompt text-2xl font-medium">Magnets</h4>
       <div class="carre_boutique mx-auto">
-        <img src="public\stickers.svg" alt="" class="mx-auto mt-6" />
+        <img src="\stickers.svg" alt="" class="mx-auto mt-6" />
       </div>
       <div class="ml-6 mr-6 mt-2 flex justify-around">
         <h4 class="font-prompt text-2xl font-medium">1,49 €</h4>
@@ -29,7 +29,7 @@
     <article class="mt-6 ml-6 mr-6 mb-20 flex flex-col">
       <h4 class="ml-14 font-prompt text-2xl font-medium">Sweat</h4>
       <div class="carre_boutique mx-auto">
-        <img src="public\Sweat_Axolott.png" alt="" class="mx-auto mt-1" />
+        <img src="\Sweat_Axolott.png" alt="" class="mx-auto mt-1" />
       </div>
       <div class="ml-6 mr-6 mt-2 flex justify-around">
         <h4 class="font-prompt text-2xl font-medium">24,99 €</h4>

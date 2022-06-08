@@ -3,12 +3,12 @@
     <!-- TITRE : MES QUETES -->
     <div class="flex justify-center gap-4 pt-2 pb-2 text-Dark-purple">
       <h1 class="font-prompt text-2xl">Mes Quêtes</h1>
-      <img src="public/icon/trophee.png" alt="logo de trophée" />
+      <img src="/icon/trophee.png" alt="logo de trophée" />
     </div>
     <!-- QUETE -->
     <div class="mb-2 grid grid-cols-[15%_85%]">
       <div class="ml-8 mt-2 flex gap-1">
-        <img src="public/icon/fleche.svg" alt="fleche de temps" class="h-6 w-6" />
+        <img src="/icon/fleche.svg" alt="fleche de temps" class="h-6 w-6" />
         <p class="font-prompt text-Dark-purple">23h</p>
       </div>
       <div class="ml-8 mr-8 drop-shadow-md">
@@ -24,7 +24,7 @@
           </div>
           <div class="mr-2 flex">
             <p class="font-prompt">10</p>
-            <img src="public/monnais.png" alt="piece de monnais" class="h-6 w-6" />
+            <img src="/monnais.png" alt="piece de monnais" class="h-6 w-6" />
           </div>
         </div>
       </div>
@@ -32,7 +32,7 @@
     <!-- QUETE 2 -->
     <div class="mb-2 grid grid-cols-[15%_85%]">
       <div class="ml-8 mt-2 flex gap-1">
-        <img src="public/icon/fleche.svg" alt="fleche de temps" class="h-6 w-6" />
+        <img src="/icon/fleche.svg" alt="fleche de temps" class="h-6 w-6" />
         <p class="font-prompt text-Dark-purple">6j</p>
       </div>
       <div class="ml-8 mr-8 drop-shadow-md">
@@ -48,7 +48,7 @@
           </div>
           <div class="mr-2 flex">
             <p class="font-prompt">10</p>
-            <img src="public/monnais.png" alt="piece de monnais" class="h-6 w-6" />
+            <img src="/monnais.png" alt="piece de monnais" class="h-6 w-6" />
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@
     <!-- QUETE 3 -->
     <div class="mb-2 grid grid-cols-[15%_85%]">
       <div class="ml-8 mt-2 flex gap-1">
-        <img src="public/icon/fleche.svg" alt="fleche de temps" class="h-6 w-6" />
+        <img src="/icon/fleche.svg" alt="fleche de temps" class="h-6 w-6" />
         <p class="font-prompt text-Dark-purple">23h</p>
       </div>
       <div class="ml-8 mr-8 drop-shadow-md">
@@ -72,7 +72,7 @@
           </div>
           <div class="mr-2 flex">
             <p class="font-prompt">10</p>
-            <img src="public/monnais.png" alt="piece de monnais" class="h-6 w-6" />
+            <img src="/monnais.png" alt="piece de monnais" class="h-6 w-6" />
           </div>
         </div>
       </div>
@@ -80,7 +80,7 @@
     <!-- QUETE 4 -->
     <div class="mb-2 grid grid-cols-[15%_85%]">
       <div class="ml-8 mt-2 flex gap-1">
-        <img src="public/icon/fleche.svg" alt="fleche de temps" class="h-6 w-6" />
+        <img src="/icon/fleche.svg" alt="fleche de temps" class="h-6 w-6" />
         <p class="font-prompt text-Dark-purple">23h</p>
       </div>
       <div class="ml-8 mr-8 drop-shadow-md">
@@ -96,7 +96,7 @@
           </div>
           <div class="mr-2 flex">
             <p class="font-prompt">10</p>
-            <img src="public/monnais.png" alt="piece de monnais" class="h-6 w-6" />
+            <img src="/monnais.png" alt="piece de monnais" class="h-6 w-6" />
           </div>
         </div>
       </div>
@@ -104,7 +104,7 @@
     <!-- QUETE 5 -->
     <div class="mb-2 grid grid-cols-[15%_85%]">
       <div class="ml-8 mt-2 flex gap-1">
-        <img src="public/icon/fleche.svg" alt="fleche de temps" class="h-6 w-6" />
+        <img src="/icon/fleche.svg" alt="fleche de temps" class="h-6 w-6" />
         <p class="font-prompt text-Dark-purple">23h</p>
       </div>
       <div class="ml-8 mr-8 drop-shadow-md">
@@ -120,7 +120,7 @@
           </div>
           <div class="mr-2 flex">
             <p class="font-prompt">10</p>
-            <img src="public/monnais.png" alt="piece de monnais" class="h-6 w-6" />
+            <img src="/monnais.png" alt="piece de monnais" class="h-6 w-6" />
           </div>
         </div>
       </div>
@@ -128,7 +128,7 @@
     <!-- QUETE 6 -->
     <div class="mb-2 grid grid-cols-[15%_85%]">
       <div class="ml-8 mt-2 flex gap-1">
-        <img src="public/icon/fleche.svg" alt="fleche de temps" class="h-6 w-6" />
+        <img src="/icon/fleche.svg" alt="fleche de temps" class="h-6 w-6" />
         <p class="font-prompt text-Dark-purple">23h</p>
       </div>
       <div class="ml-8 mr-8 drop-shadow-md">
@@ -144,7 +144,7 @@
           </div>
           <div class="mr-2 flex">
             <p class="font-prompt">10</p>
-            <img src="public/monnais.png" alt="piece de monnais" class="h-6 w-6" />
+            <img src="/monnais.png" alt="piece de monnais" class="h-6 w-6" />
           </div>
         </div>
       </div>

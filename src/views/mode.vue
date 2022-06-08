@@ -5,32 +5,32 @@
 
   <div class="flex justify-center">
     <div class="cercle_bleu">
-      <img src="public/axolott/axo_main.svg" alt="axolotl de base" class="img_axo" />
+      <img src="/axolott/axo_main.svg" alt="axolotl de base" class="img_axo" />
     </div>
   </div>
 
   <div class="mt-2 flex justify-evenly bg-white pt-2 pb-2">
-    <img src="public\icon\arrow_left.svg" alt="" />
-    <img src="public\icon\corps_axo_bleu.svg" alt="" />
-    <img src="public\icon\tee-shirt.svg" alt="" />
-    <img src="public\icon\eye.svg" alt="" />
-    <img src="public\icon\bouche.svg" alt="" />
-    <img src="public\icon\arrow_right.svg" alt="" />
+    <img src="\icon\arrow_left.svg" alt="" />
+    <img src="\icon\corps_axo_bleu.svg" alt="" />
+    <img src="\icon\tee-shirt.svg" alt="" />
+    <img src="\icon\eye.svg" alt="" />
+    <img src="\icon\bouche.svg" alt="" />
+    <img src="\icon\arrow_right.svg" alt="" />
   </div>
   <div class="fond-gris flex flex-wrap justify-evenly pb-20">
     <div class="selection">
-      <img src="public\axolott\axo_rouge.svg" alt="" />
+      <img src="\axolott\axo_rouge.svg" alt="" />
     </div>
-    <img src="public\axolott\Axo_jaune.svg" alt="" />
-    <img src="public\axolott\axo_majenta.svg" alt="" />
-    <img src="public\axolott\axo_black.svg" alt="" />
-    <img src="public\axolott\axo_bleu_clair.svg" alt="" />
-    <img src="public\axolott\axo_bleu_fonce.svg" alt="" />
-    <img src="public\axolott\axo_rose.svg" alt="" />
-    <img src="public\axolott\axo_orange.svg" alt="" />
-    <img src="public\axolott\axo_bordeaux.svg" alt="" />
-    <img src="public\axolott\axolott_vert_clair.svg" alt="" />
-    <img src="public\axolott\axo_vert_fonce.svg" alt="" />
+    <img src="\axolott\Axo_jaune.svg" alt="" />
+    <img src="\axolott\axo_majenta.svg" alt="" />
+    <img src="\axolott\axo_black.svg" alt="" />
+    <img src="\axolott\axo_bleu_clair.svg" alt="" />
+    <img src="\axolott\axo_bleu_fonce.svg" alt="" />
+    <img src="\axolott\axo_rose.svg" alt="" />
+    <img src="\axolott\axo_orange.svg" alt="" />
+    <img src="\axolott\axo_bordeaux.svg" alt="" />
+    <img src="\axolott\axolott_vert_clair.svg" alt="" />
+    <img src="\axolott\axo_vert_fonce.svg" alt="" />
   </div>
 </template>
 

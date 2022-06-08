@@ -12,31 +12,31 @@
       <div class="flex justify-evenly pt-2 pb-2">
         <div class="flex flex-col items-center">
           <RouterLink to="/">
-            <img src="public\icon\quete.png" alt="quete" class="mx-auto h-8 w-8" />
+            <img src="\icon\quete.png" alt="quete" class="mx-auto h-8 w-8" />
             <p class="font-prompt text-[12px] text-white">Quêtes</p>
           </RouterLink>
         </div>
         <div class="flex flex-col items-center">
           <RouterLink to="/mode" class="">
-            <img src="public\icon\mode.png" alt="quete" class="h-8 w-8" />
+            <img src="\icon\mode.png" alt="quete" class="h-8 w-8" />
             <p class="font-prompt text-[12px] text-white">Mode</p>
           </RouterLink>
         </div>
         <div class="flex flex-col items-center">
           <RouterLink to="/boutique" class="">
-            <img src="public\icon\boutique.png" alt="quete" class="mx-auto h-8 w-8" />
+            <img src="\icon\boutique.png" alt="quete" class="mx-auto h-8 w-8" />
             <p class="font-prompt text-[12px] text-white">Boutique</p>
           </RouterLink>
         </div>
         <div class="flex flex-col items-center">
           <RouterLink to="/apropos" class="">
-            <img src="public\icon\apropos.svg" alt="quete" class="mx-auto h-8 w-8" />
+            <img src="\icon\apropos.svg" alt="quete" class="mx-auto h-8 w-8" />
             <p class="font-prompt text-[12px] text-white">À propos</p>
           </RouterLink>
         </div>
         <div class="flex flex-col items-center">
           <RouterLink to="/conf2" class="">
-            <img src="public\icon\politique.png" alt="quete" class="mx-auto h-8 w-8" />
+            <img src="\icon\politique.png" alt="quete" class="mx-auto h-8 w-8" />
             <p class="font-prompt text-[12px] text-white">Conf.</p>
           </RouterLink>
         </div>

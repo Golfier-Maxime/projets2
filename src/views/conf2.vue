@@ -4,7 +4,7 @@
   </div>
   <div class="rounded-2xl bg-white">
     <div class="pt-3 pb-3">
-      <img src="public/icon/Logo_Axolott_black.svg" alt="logo axolott" class="mx-auto" />
+      <img src="/icon/Logo_Axolott_black.svg" alt="logo axolott" class="mx-auto" />
     </div>
     <div class="ml-6 mr-6 font-mulish">
       <p class="mb-2">Axolott s’engage à assurer le meilleur niveau de protection à vos données personnelles.</p>

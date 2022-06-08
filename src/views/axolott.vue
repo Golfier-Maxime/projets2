@@ -5,7 +5,7 @@
     </div>
     <div class="flex justify-center">
       <div class="cercle_bleu">
-        <img src="public/axolott/axo_main.svg" alt="axolotl de base" class="img_axo" />
+        <img src="/axolott/axo_main.svg" alt="axolotl de base" class="img_axo" />
       </div>
     </div>
   </div>

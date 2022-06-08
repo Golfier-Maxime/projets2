@@ -6,7 +6,7 @@
     <div class="ml-6 mr-6">
       <h3 class="mb-2 ml-6 mr-6 text-center font-prompt text-2xl font-medium">Tout savoir sur le projet Axolott</h3>
       <p class="mb-2 font-mulish">Axolott et un projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
-      <img src="public\icon\logo-mmi-noir-blanc.svg" alt="" class="mx-auto mb-2" />
+      <img src="\icon\logo-mmi-noir-blanc.svg" alt="" class="mx-auto mb-2" />
       <p>
         Axolott et une façon de modifier ou améliorer votre routine. Le but et de vous accompagnez dans votre vie de tout les jours afin de
         dynamiser votre quotidien.
@@ -17,13 +17,13 @@
         <div>
           <div class="flex justify-center">
             <div class="cercle_violet">
-              <img src="public/axolott/axo_maxime.svg" alt="axolotl de base" class="img_axo" />
+              <img src="/axolott/axo_maxime.svg" alt="axolotl de base" class="img_axo" />
             </div>
           </div>
           <div class="mt-2 mb-2 flex justify-evenly">
-            <a href=""><img src="public\icon\twitter.png" alt="logo twitter" /></a>
-            <a href=""><img src="public\icon\inst.png" alt="logo insta" /></a>
-            <a href=""><img src="public\icon\git.png" alt="logo github" /></a>
+            <a href=""><img src="\icon\twitter.png" alt="logo twitter" /></a>
+            <a href=""><img src="\icon\inst.png" alt="logo insta" /></a>
+            <a href=""><img src="\icon\git.png" alt="logo github" /></a>
           </div>
         </div>
         <p>
@@ -36,12 +36,12 @@
         <div>
           <div class="flex justify-center">
             <div class="cercle_jaune">
-              <img src="public/axolott/axo_allan.svg" alt="axolotl de base" class="img_axo" />
+              <img src="/axolott/axo_allan.svg" alt="axolotl de base" class="img_axo" />
             </div>
           </div>
           <div class="mt-2 mb-2 flex justify-evenly">
-            <a href=""><img src="public\icon\twitter.png" alt="logo twitter" /></a>
-            <a href=""><img src="public\icon\inst.png" alt="logo insta" /></a>
+            <a href=""><img src="\icon\twitter.png" alt="logo twitter" /></a>
+            <a href=""><img src="\icon\inst.png" alt="logo insta" /></a>
           </div>
         </div>
         <p>
@@ -54,13 +54,13 @@
         <div>
           <div class="flex justify-center">
             <div class="cercle_cyan">
-              <img src="public/axolott/axo_julien.svg" alt="axolotl de base" class="img_axo" />
+              <img src="/axolott/axo_julien.svg" alt="axolotl de base" class="img_axo" />
             </div>
           </div>
           <div class="mt-2 mb-2 flex justify-evenly">
-            <a href=""><img src="public\icon\twitter.png" alt="logo twitter" /></a>
-            <a href=""><img src="public\icon\inst.png" alt="logo insta" /></a>
-            <a href=""><img src="public\icon\twitch.png" alt="logo twitch" /></a>
+            <a href=""><img src="\icon\twitter.png" alt="logo twitter" /></a>
+            <a href=""><img src="\icon\inst.png" alt="logo insta" /></a>
+            <a href=""><img src="\icon\twitch.png" alt="logo twitch" /></a>
           </div>
         </div>
         <p>
