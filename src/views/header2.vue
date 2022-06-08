@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-Deep-purple header flex justify-between rounded-b-2xl">
+  <header class="header flex justify-between rounded-b-2xl bg-Deep-purple">
     <div class="mt-3 mb-3 ml-3">
       <img src="public/icon/Logo_Axolott.svg" alt="logo axolott" />
     </div>

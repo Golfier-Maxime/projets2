@@ -4,6 +4,7 @@ import test from '../views/test.vue'
 import conf2 from '../views/conf2.vue'
 import apropos from '../views/apropos.vue'
 import boutique from '../views/boutique.vue'
+import mode from '../views/mode.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,6 +14,7 @@ const router = createRouter({
     { path: '/conf2', name: 'conf2', component: conf2 },
     { path: '/apropos', name: 'apropos', component: apropos },
     { path: '/boutique', name: 'boutique', component: boutique },
+    { path: '/mode', name: 'mode', component: mode },
     // ici les autre routes
   ]
 })
