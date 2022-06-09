@@ -10,18 +10,17 @@
   </div>
 
   <div class="mt-2 flex justify-evenly bg-white pt-2 pb-2">
-    <RouterLink to="/modeBouche" class=""> <img src="\icon\arrow_left.svg" alt="" /></RouterLink>
-    <img src="\icon\corps_axo_bleu.svg" alt="" />
+    <RouterLink to="/modeEye" class=""> <img src="\icon\arrow_left.svg" alt="" /></RouterLink>
+    <img src="\icon\corps_axo.svg" alt="" />
     <img src="\icon\tee-shirt.svg" alt="" />
     <img src="\icon\eye.svg" alt="" />
-    <img src="\icon\bouche.svg" alt="" />
-
-    <RouterLink to="/modeTshirt" class=""> <img src="\icon\arrow_right.svg" alt="" /></RouterLink>
+    <img src="\icon\bouche_bleu.svg" alt="" />
+    <RouterLink to="/mode" class=""> <img src="\icon\arrow_right.svg" alt="" /></RouterLink>
   </div>
 
-  <div class="flex flex-wrap justify-center gap-2 bg-white pt-4 pb-20">
-    <div v-for="axolott in ListeAxolott" :key="axolott">
-      <img :src="axolott.corps" alt="" class="w-[100px]" />
+  <div class="flex flex-wrap justify-center gap-16 bg-white pt-4">
+    <div v-for="axolott in ListeAxolott" :key="axolott" class="mt-2">
+      <img :src="axolott.bouches" alt="" class="w-[50px]" />
     </div>
   </div>
 </template>
@@ -67,10 +66,10 @@ export default {
         console.log(this.ListeAxolott);
         this.ListeAxolott.forEach(function (axolott) {
           const storage = getStorage();
-          const spaceRef = ref(storage, "corps/" + axolott.corps);
+          const spaceRef = ref(storage, "bouches/" + axolott.bouches);
           getDownloadURL(spaceRef)
             .then((url) => {
-              axolott.corps = url;
+              axolott.bouches = url;
             })
             .catch((error) => {
               console.log("erreur download url", error);
@@ -90,14 +89,3 @@ export default {
   computed: {},
 };
 </script>
-
-<style>
-.fond-gris {
-  background: #f4f4f4;
-}
-.selection {
-  background: #46d9a4;
-  opacity: 50%;
-  border-radius: 10px;
-}
-</style>
