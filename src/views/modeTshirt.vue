@@ -11,11 +11,10 @@
 
   <div class="mt-2 flex justify-evenly bg-white pt-2 pb-2">
     <img src="\icon\arrow_left.svg" alt="" />
-    <img src="\icon\corps_axo_bleu.svg" alt="" />
-    <img src="\icon\tee-shirt.svg" alt="" />
+    <img src="\icon\corps_axo.svg" alt="" />
+    <img src="\icon\tshirt_bleu.svg" alt="" />
     <img src="\icon\eye.svg" alt="" />
     <img src="\icon\bouche.svg" alt="" />
-
     <RouterLink to="/modeTshirt" class=""> <img src="\icon\arrow_right.svg" alt="" /></RouterLink>
   </div>
   <!-- <div class="fond-gris flex flex-wrap justify-evenly pb-20">
@@ -117,14 +116,3 @@ export default {
   computed: {},
 };
 </script>
-
-<style>
-.fond-gris {
-  background: #f4f4f4;
-}
-.selection {
-  background: #46d9a4;
-  opacity: 50%;
-  border-radius: 10px;
-}
-</style>
