@@ -29,8 +29,8 @@
         </div>
       </div>
     </div> -->
-    <div class="">
-      <tr v-for="quetes in filterByName" :key="quetes.libelle">
+    <div class="mx-auto w-fit">
+      <tr v-for="quetes in listeQuetesSynchro" :key="quetes.libelle">
         <td>
           <form>
             <div class="ml-8 mr-8 mb-4 drop-shadow-md">
@@ -38,7 +38,7 @@
                 <div class="">
                   <input type="text" class="ml-4 font-mulish text-white" v-model="quetes.libelle" required />
                 </div>
-                <div class="carre_check mr-4 bg-white"></div>
+                <div class="carre_check mr-4 bg-white" @click="addPoint"></div>
               </div>
               <div class="flex justify-between rounded-b-xl bg-white pt-2 pb-2">
                 <div>
@@ -66,31 +66,55 @@
 
 <script>
 import {
-  getFirestore,
-  collection,
-  doc,
-  getDocs,
-  addDoc,
-  updateDoc,
-  deleteDoc,
-  onSnapshot,
-  orderBy,
+  getAuth,
+  signInWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged,
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js";
+import {
+  getFirestore, // Obtenir le Firestore
+  collection, // Utiliser une collection de documents
+  doc, // Obtenir un document par son id
+  getDocs, // Obtenir la liste des documents d'une collection
+  addDoc, // Ajouter un document à une collection
+  updateDoc, // Mettre à jour un document dans une collection
+  deleteDoc, // Supprimer un document d'une collection
+  onSnapshot, // Demander une liste de documents d'une collection, en les synchronisant
+  query, // Permet d'effectuer des requêtes sur Firestore
+  orderBy, // Permet de demander le tri d'une requête query
+  where,
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
 export default {
   name: "ListeQuetes",
   data() {
     return {
       listeQuetesSynchro: [],
-      filter: "",
-      nom: null,
-      libelle: null,
-      desc: null,
     };
   },
   mounted() {
     this.getQuetesSynchro();
   },
   methods: {
+    async addPoint() {
+      const firestore = getFirestore();
+      const dbUsers = collection(firestore, "user");
+      const q = query(dbUsers, where("uid", "==", getAuth().currentUser.uid));
+      const querySnapshot = await getDocs(q);
+      querySnapshot.forEach((doc) => {
+        this.updatePoint(doc);
+      });
+    },
+    async updatePoint(document) {
+      const firestore = getFirestore();
+      console.log(document.id, " ", document.data());
+      var newPoint = "10";
+      console.log(document.point);
+      var x = newPoint + document.point;
+      console.log(x);
+      await updateDoc(doc(firestore, "user", document.id), {
+        point: (newPoint += document.point),
+      });
+    },
     async getQuetesSynchro() {
       const firestore = getFirestore();
       const dbQuetes = collection(firestore, "quetes");
@@ -142,24 +166,6 @@ export default {
         // Sinon ni avant ni après (homonyme) on retourne 0
         return 0;
       });
-    },
-    // Filtrage de la propriété calculée de tri
-    filterByName: function () {
-      // On effectue le fitrage seulement si le filtre est rnseigné
-      if (this.filter.length > 0) {
-        // On récupère le filtre saisi en minuscule (on évite les majuscules)
-        let filter = this.filter.toLowerCase();
-        // Filtrage de la propriété calculée de tri
-        return this.orderByName.filter(function (quetes) {
-          // On ne renvoie que les pays dont le nom contient
-          // la chaine de caractère du filtre
-          return quetes.nom.toLowerCase().includes(filter);
-        });
-      } else {
-        // Si le filtre n'est pas saisi
-        // On renvoie l'intégralité de la liste triée
-        return this.orderByName;
-      }
     },
   },
 };

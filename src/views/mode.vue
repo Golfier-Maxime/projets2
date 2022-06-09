@@ -32,20 +32,24 @@
     <img src="\axolott\axolott_vert_clair.svg" alt="" />
     <img src="\axolott\axo_vert_fonce.svg" alt="" />
   </div> -->
-  <div class="mt-2">
-    <img :src="axolott.corps" alt="" class="h-10 w-10" />
+  <div class="flex flex-wrap justify-center bg-white pt-4 pb-20">
+    <div v-for="axolott in ListeAxolott" :key="axolott">
+      <img :src="axolott.corps" alt="" class="w-[100px]" />
+    </div>
   </div>
-  <tr v-for="axolott in filterByName" :key="axolott.id">
-    <td>
-      <form>
-        <div class="">
+  <!-- <table>
+    <tr v-for="axolott in ListeAxolott" :key="axolott">
+      <td>
+        <form>
           <div class="">
-            <img :src="axolott.corps" alt="" />
+            <div class="">
+              <img :src="axolott.corps" alt="" />
+            </div>
           </div>
-        </div>
-      </form>
-    </td>
-  </tr>
+        </form>
+      </td>
+    </tr>
+  </table> -->
 </template>
 
 <script>
@@ -60,53 +64,45 @@ import {
   onSnapshot,
   orderBy,
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
+import {
+  getStorage, // Obtenir le Cloud Storage
+  ref, // Pour créer une référence à un fichier à uploader
+  deleteObject,
+  getDownloadURL, // Permet de récupérer l'adress complète d'un fichier du Storage
+  uploadString, // Permet d'uploader sur le Cloud Storage une image en Base64
+} from "https://www.gstatic.com/firebasejs/9.8.1/firebase-storage.js";
 export default {
   name: "ImgAxo",
   data() {
     return {
-      listeQuetesSynchro: [],
-      filter: "",
-      nom: null,
-      libelle: null,
-      desc: null,
-      axolott: {
-        corps: null,
-      },
+      ListeAxolott: [],
     };
   },
   mounted() {
-    this.getQuetesSynchro();
+    this.getAxolott();
   },
   methods: {
-    async getQuetesSynchro() {
+    async getAxolott() {
       const firestore = getFirestore();
-      const dbQuetes = collection(firestore, "quetes");
-      const query = await onSnapshot(dbQuetes, (snapshot) => {
-        this.listeQuetesSynchro = snapshot.docs.map((doc) => ({
+      const dbAxolott = collection(firestore, "axolott");
+      await onSnapshot(dbAxolott, (snapshot) => {
+        this.ListeAxolott = snapshot.docs.map((doc) => ({
           id: doc.id,
           ...doc.data(),
         }));
+        console.log(this.ListeAxolott);
+        this.ListeAxolott.forEach(function (axolott) {
+          const storage = getStorage();
+          const spaceRef = ref(storage, "corps/" + axolott.corps);
+          getDownloadURL(spaceRef)
+            .then((url) => {
+              axolott.corps = url;
+            })
+            .catch((error) => {
+              console.log("erreur download url", error);
+            });
+        });
       });
-    },
-    async createQuetes() {
-      const firestore = getFirestore();
-      const dbQuetes = collection(firestore, "quetes");
-      const docRef = await addDoc(dbQuetes, {
-        nom: this.nom,
-      });
-      console.log("document créé avec le id : ", docRef.id);
-    },
-    async updateQuetes(quetes) {
-      const firestore = getFirestore();
-      const docRef = doc(firestore, "quetes", quetes.id);
-      await updateDoc(docRef, {
-        nom: quetes.nom,
-      });
-    },
-    async deleteQuetes(quetes) {
-      const firestore = getFirestore();
-      const docRef = doc(firestore, "quetes", quetes.id);
-      await deleteDoc(docRef);
     },
   },
   //   computed: {
@@ -117,38 +113,7 @@ export default {
   //       });
   //     },
   //   },
-  computed: {
-    // Tri des pays par nom en ordre croissant
-    orderByName: function () {
-      // Parcours et tri des pays 2 à 2
-      return this.listeQuetesSynchro.sort(function (a, b) {
-        // Si le nom du pays est avant on retourne -1
-        if (a.nom < b.nom) return -1;
-        // Si le nom du pays est après on retourne 1
-        if (a.nom > b.nom) return 1;
-        // Sinon ni avant ni après (homonyme) on retourne 0
-        return 0;
-      });
-    },
-    // Filtrage de la propriété calculée de tri
-    filterByName: function () {
-      // On effectue le fitrage seulement si le filtre est rnseigné
-      if (this.filter.length > 0) {
-        // On récupère le filtre saisi en minuscule (on évite les majuscules)
-        let filter = this.filter.toLowerCase();
-        // Filtrage de la propriété calculée de tri
-        return this.orderByName.filter(function (quetes) {
-          // On ne renvoie que les pays dont le nom contient
-          // la chaine de caractère du filtre
-          return quetes.nom.toLowerCase().includes(filter);
-        });
-      } else {
-        // Si le filtre n'est pas saisi
-        // On renvoie l'intégralité de la liste triée
-        return this.orderByName;
-      }
-    },
-  },
+  computed: {},
 };
 </script>
 
