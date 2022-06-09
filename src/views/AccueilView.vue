@@ -2,7 +2,8 @@
   <div>
     <axolott></axolott>
     <br />
-    <quete v-for="i in 1" :key="i"></quete>
+    <quete></quete>
+    <!-- v-for="i in 1" :key="i" -->
   </div>
 </template>
 
