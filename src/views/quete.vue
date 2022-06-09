@@ -109,8 +109,6 @@ export default {
       console.log(document.id, " ", document.data());
       var newPoint = "10";
       console.log(document.point);
-      var x = newPoint + document.point;
-      console.log(x);
       await updateDoc(doc(firestore, "user", document.id), {
         point: (newPoint += document.point),
       });

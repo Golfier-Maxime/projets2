@@ -3,32 +3,34 @@
     <form @submit.prevent="onCnx()" class="flex flex-col justify-center" v-if="!Connected">
       <div class="">
         <div class="">
-          <button class="">Email :</button>
+          <button class="text-white">Email</button>
         </div>
-        <input class="" type="text" v-model="user.email" required />
+        <input class="text-white" type="text" v-model="user.email" required />
       </div>
       <div class="">
         <div class="">
-          <button class="">Mot de passe :</button>
+          <button class="text-white">Mot de passe</button>
         </div>
-        <input class="" type="password" v-model="user.password" required />
+        <input class="text-white" type="password" v-model="user.password" required />
       </div>
-      <div class="alert alert-warning mb-3 text-center" v-if="message != null">
+      <!-- <div class="alert alert-warning mb-3 text-center text-white" v-if="message != null">
         {{ message }}
-      </div>
-      <div>
-        <button class="" type="submit">Se connecter</button>
+      </div> -->
+      <div class="flex justify-center">
+        <button class="bouton_deco mt-4" type="submit">Se connecter</button>
       </div>
     </form>
-    <button class="" @click="onDcnx()" v-if="Connected">Se deconnecter</button>
+    <button class="bouton_deco" @click="onDcnx()" v-if="Connected">Se deconnecter</button>
   </div>
   <div class="mb-3 pt-5 text-center font-prompt text-3xl text-white">
     <!-- <h2 class="font-prompt">Pseudo</h2> -->
     <h2>{{ user.pseudo }}</h2>
   </div>
-  <div class="flex justify-center">
+  <div class="flex justify-center" v-if="Connected">
     <div class="cercle_bleu">
-      <img src="/axolott/axo_main.svg" alt="axolotl de base" class="img_axo" />
+      <div>
+        <img :src="user.axolott" alt="" class="mt-12" />
+      </div>
     </div>
   </div>
 </template>
@@ -65,11 +67,13 @@ export default {
   data() {
     // Données de la vue
     return {
+      imageAxolott: [],
       user: {
         // user se connectant
         email: null,
         password: null,
         pseudo: null,
+        axolott: null,
       },
       message: null, // Message de connexion
       Connected: false,
@@ -77,6 +81,7 @@ export default {
   },
 
   mounted() {
+    // this.getImageAxolott();
     this.getUserConnect();
     // Montage de la vue
     // Rechercher si un user est déjà connecté
@@ -90,6 +95,28 @@ export default {
   },
 
   methods: {
+    // async getImageAxolott() {
+    //   const firestore = getFirestore();
+    //   const dbImageAxolott = collection(firestore, "user");
+    //   await onSnapshot(dbImageAxolott, (snapshot) => {
+    //     this.imageAxolott = snapshot.docs.map((doc) => ({
+    //       id: doc.id,
+    //       ...doc.data(),
+    //     }));
+    //     console.log(this.imageAxolott);
+    //     this.imageAxolott.forEach(function (user) {
+    //       const storage = getStorage();
+    //       const spaceRef = ref(storage, "axolott/" + user.axolott);
+    //       getDownloadURL(spaceRef)
+    //         .then((url) => {
+    //           user.axolott = url;
+    //         })
+    //         .catch((error) => {
+    //           console.log("erreur download url", error);
+    //         });
+    //     });
+    //   });
+    // },
     async getUserConnect() {
       await getAuth().onAuthStateChanged(
         function (user) {
@@ -107,6 +134,7 @@ export default {
         let user = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
         console.log(user);
         this.user.pseudo = user[0].pseudo;
+        this.user.axolott = user[0].axolott;
       });
     },
     onCnx() {
@@ -162,5 +190,16 @@ export default {
 }
 .img_axo {
   margin-top: 50px;
+}
+.bouton_deco {
+  background-color: var(--cyan);
+  border: none;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px black;
 }
 </style>
