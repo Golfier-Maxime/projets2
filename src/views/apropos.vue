@@ -45,8 +45,8 @@
           </div>
         </div>
         <p>
-          Étudiant en première année de MMI, je suis passionné par la programmation et le dévelopement web. Vous pouvez me retrouver sur mes
-          réseaux !
+          Passionné d’Internet, de graphisme ainsi que de musique, ces trois domaines permettent de laisser exprimer ma créativité dans ce
+          que j’entreprends.
         </p>
       </div>
       <div class="mb-20">
